@@ -23,7 +23,7 @@ A simple command-line interface (CLI) to-do list application written in Python.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/todo-app.git
+    git clone https://github.com/jamjam2103/ToDoApp_Anay-Samarth_TD1.git
     ```
 
 2. Navigate to the project directory:
