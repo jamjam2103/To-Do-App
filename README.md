@@ -29,7 +29,7 @@ A simple command-line interface (CLI) to-do list application written in Python.
 2. Navigate to the project directory:
 
     ```bash
-    cd todo-app
+    cd ToDoApp_Anay-Samarth_TD1
     ```
 
 ### Usage
@@ -37,7 +37,7 @@ A simple command-line interface (CLI) to-do list application written in Python.
 Run the to-do list app by executing the following command:
 
 ```bash
-python3 todolist.py
+python3 to-do.py
 ```
 
 Follow the on-screen instructions to interact with the app:
