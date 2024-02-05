@@ -23,13 +23,13 @@ A simple command-line interface (CLI) to-do list application written in Python.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/jamjam2103/ToDoApp_Anay-Samarth_TD1.git
+    git clone https://github.com/jamjam2103/ToDoApp_Anay-Samarth_CDOF1.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd ToDoApp_Anay-Samarth_TD1
+    cd ToDoApp_Anay-Samarth_CDOF1
     ```
 
 ### Usage
