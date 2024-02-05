@@ -41,7 +41,7 @@ python3 to-do.py add --title "Task Title" --priority "high"
 python3 to-do.py done --index 1
 python3 to-do.py delete --index 2
 python3 to-do.py exit
-
+```
 Follow the on-screen instructions to interact with the app:
 
 - Option 1: Display To-Do List
