@@ -32,13 +32,15 @@ A simple command-line interface (CLI) to-do list application written in Python.
     cd ToDoApp_Anay-Samarth_CDOF1
     ```
 
-### Usage
+## Usage
 
-Run the to-do list app by executing the following command:
-
+### To-Do List
 ```bash
-python3 to-do.py
-```
+python3 to-do.py display
+python3 to-do.py add --title "Task Title" --priority "high"
+python3 to-do.py done --index 1
+python3 to-do.py delete --index 2
+python3 to-do.py exit
 
 Follow the on-screen instructions to interact with the app:
 
