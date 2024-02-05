@@ -22,10 +22,10 @@ def display_todo_list(todo_list):
         print("To-Do List:")
         for index, task in enumerate(todo_list, start=1):
             status = "Done" if task['done'] else "Not Done"
-            print(f"{index}. {task['title']} - {status}")
+            print(f"{index}. {task['title']} - Priority: {task['priority']} - {status}")
 
-def add_task(todo_list, title):
-    todo_list.append({'title': title, 'done': False})
+def add_task(todo_list, title, priority):
+    todo_list.append({'title': title, 'done': False, 'priority': priority})
     save_todo_list(todo_list)
     print(f"Task '{title}' added to the to-do list.")
 
@@ -61,7 +61,8 @@ def main():
             display_todo_list(todo_list)
         elif choice == '2':
             title = input("Enter task title: ")
-            add_task(todo_list, title)
+            priority = input("Enter task priority (e.g., high, medium, low): ")
+            add_task(todo_list, title, priority)
         elif choice == '3':
             index = int(input("Enter task index to mark as done: "))
             mark_task_done(todo_list, index)
