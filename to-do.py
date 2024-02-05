@@ -1,5 +1,6 @@
 import os
 import json
+import argparse
 
 # File to store the to-do list
 TODO_FILE = 'todo.json'
@@ -46,6 +47,29 @@ def delete_task(todo_list, index):
         print("Invalid task index.")
 
 def main():
+    parser = argparse.ArgumentParser(description='To-Do List Manager')
+    parser.add_argument('action', choices=['display', 'add', 'done', 'delete', 'exit'], help='Action to perform')
+    parser.add_argument('--title', help='Task title')
+    parser.add_argument('--priority', help='Task priority')
+    parser.add_argument('--index', type=int, help='Task index')
+
+    args = parser.parse_args()
+
+    todo_list = load_todo_list()
+
+    if args.action == 'display':
+        display_todo_list(todo_list)
+    elif args.action == 'add':
+        add_task(todo_list, args.title, args.priority)
+    elif args.action == 'done':
+        mark_task_done(todo_list, args.index)
+    elif args.action == 'delete':
+        delete_task(todo_list, args.index)
+    elif args.action == 'exit':
+        print("Exiting the to-do list app. Have a great day!")
+    else:
+        print("Invalid action. Please choose from display, add, done, delete, or exit.")
+
     todo_list = load_todo_list()
 
     while True:
