@@ -73,6 +73,7 @@ def main():
     todo_list = load_todo_list()
 
     while True:
+        display_todo_list(todo_list)
         print("\n1. Display To-Do List")
         print("2. Add Task")
         print("3. Mark Task as Done")
